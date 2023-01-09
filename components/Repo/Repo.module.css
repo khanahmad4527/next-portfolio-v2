@@ -1,0 +1,65 @@
+.main {
+  background-color: #81e6d9;
+  padding: 10px;
+  color: #645d9e;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.reponame {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.botm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botm > div:nth-child(1) {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+.botm > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 30%;
+}
+
+.repostar {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.repofork {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.blink {
+  background-color: yellow;
+  color: yellow;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.language {
+  font-size: 20px;
+}

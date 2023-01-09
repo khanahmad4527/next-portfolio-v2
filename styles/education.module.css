@@ -1,0 +1,28 @@
+.main {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #1a202c;
+  color: white;
+}
+
+.edu {
+  position: relative;
+  top: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d3748;
+  border-radius: 10px;
+}
+
+.edu > div {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.edu > div > div {
+  padding: 20px;
+}

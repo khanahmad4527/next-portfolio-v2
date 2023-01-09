@@ -1,0 +1,30 @@
+.main {
+  margin: 0;
+  padding: 0;
+  background-color: #1a202c;
+  height: max-content;
+}
+
+.right {
+  position: relative;
+  top: 20px;
+  margin-top: 20px;
+  width: 85%;
+  margin: auto;
+  background-color: #2d3748;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  height: fit-content;
+}
+
+.repogrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+}

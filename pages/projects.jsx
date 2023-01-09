@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/projects.module.css";
 import { Heading } from "@chakra-ui/react";
 import Repo from "../components/Repo/Repo";
+import Link from "next/link";
 
 function projects({ repo }) {
   return (
@@ -11,7 +12,7 @@ function projects({ repo }) {
       <div className={styles.repogrid}>
         {repo.items &&
           repo.items.map((elm) => {
-            return <Repo key={elm.id} {...elm} />;
+            return <Link key={elm.id} href={elm.git_url}><Repo key={elm.id} {...elm} /></Link>
           })}
       </div>
     </div>

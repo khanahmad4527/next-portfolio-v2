@@ -7,15 +7,19 @@ import Link from "next/link";
 function projects({ repo }) {
   return (
     <div className={styles.main}>
-          <div className={styles.right}>
-      <Heading>Projects</Heading>
-      <div className={styles.repogrid}>
-        {repo.items &&
-          repo.items.map((elm) => {
-            return <Link key={elm.id} href={elm.git_url}><Repo key={elm.id} {...elm} /></Link>
-          })}
+      <div className={styles.right}>
+        <Heading>Projects</Heading>
+        <div className={styles.repogrid}>
+          {repo.items &&
+            repo.items.map((elm) => {
+              return (
+                <Link key={elm.id} href={elm.git_url}>
+                  <Repo key={elm.id} {...elm} />
+                </Link>
+              );
+            })}
+        </div>
       </div>
-    </div>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Heading } from "@chakra-ui/react";
 import Repo from "../components/Repo/Repo";
+import Link from "next/link";
 
 // interface ProfileProps{
 //   avatar_url:string,
@@ -84,7 +85,11 @@ export default function Home({ profile, repo }) {
             <div className={styles.repogrid}>
               {repo.items &&
                 repo.items.map((elm) => {
-                  return <Repo key={elm.id} {...elm} />;
+                  return (
+                    <Link key={elm.id} href={elm.git_url}>
+                      <Repo key={elm.id} {...elm} />
+                    </Link>
+                  );
                 })}
             </div>
           </div>

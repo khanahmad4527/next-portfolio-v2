@@ -28,7 +28,7 @@ export default projects;
 
 export async function getStaticProps() {
   const res2 = await fetch(
-    `https://api.github.com/search/repositories?q=user:khan4527+fork:true&sort=updated&per_page=10&type=Repositories`
+    `https://api.github.com/search/repositories?q=user:khanahmad4527+fork:true&sort=updated&per_page=10&type=Repositories`
   );
   const repo = await res2.json();
   return {

@@ -100,11 +100,11 @@ export default function Home({ profile, repo }) {
 }
 
 export async function getStaticProps() {
-  const res1 = await fetch(`https://api.github.com/users/khan4527`);
+  const res1 = await fetch(`https://api.github.com/users/khanahmad4527`);
   const profile = await res1.json();
 
   const res2 = await fetch(
-    `https://api.github.com/search/repositories?q=user:khan4527+fork:true&sort=updated&per_page=10&type=Repositories`
+    `https://api.github.com/search/repositories?q=user:khanahmad4527+fork:true&sort=updated&per_page=10&type=Repositories`
   );
   const repo = await res2.json();
 
